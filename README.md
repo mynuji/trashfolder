@@ -20,7 +20,12 @@ $ make
 gcc -g  -Wall   -c -o trash.o trash.c
 gcc -g  -Wall -o trash trash.o
 
+$ make install
+cp trash ~/.trash/trash
 
 Warning 2개 나오는 것은 무시한다. 
 
 # 설치방법
+
+ bash shell에서는 .profile 
+ alias rm 'trash'
