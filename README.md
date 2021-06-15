@@ -36,3 +36,5 @@ Warning 2개 나오는 것은 무시한다.
  - 삭제명령: 기존 rm 명령과 동일하다.
  - 파일복원: rm -u
  
+![image](https://user-images.githubusercontent.com/20812684/122073134-2ab39c00-ce33-11eb-97a4-a7905479a437.png)
+
