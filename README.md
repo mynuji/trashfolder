@@ -27,5 +27,11 @@ Warning 2개 나오는 것은 무시한다.
 
 # 설치방법
 
- bash shell에서는 .profile 
+ bash shell에서는 .profile 의 마지막에 아래 내용을 추가한다
  alias rm 'trash'
+
+# 사용방법
+
+ - 삭제명령: 기존 rm 명령과 동일하다.
+ - 파일복원: rm -u
+ 
