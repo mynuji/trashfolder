@@ -28,7 +28,8 @@ Warning 2개 나오는 것은 무시한다.
 # 설치방법
 
  bash shell에서는 .profile 의 마지막에 아래 내용을 추가한다
- alias rm 'trash'
+ 
+ alias rm='~/.trash/trash'
 
 # 사용방법
 
