@@ -16,6 +16,16 @@ Trash Folder의 단점인 휴지통 비우기를 하지 않아서, 서버의 디
 
 # 컴파일
 
+$ make
+gcc -g  -Wall   -c -o trash.o trash.c
+trash.c: In function ‘delete_file’:
+trash.c:1871:27: warning: ‘%s’ directive writing up to 255 bytes into a region of size 192 [-Wformat-overflow=]
+       sprintf(buf, "%s/%s/%s", home, TRASH_FOLDER, t->trash);
+                           ^~
+trash.c:1871:7: note: ‘sprintf’ output 9 or more bytes (assuming 264) into a destination of size 200
+       sprintf(buf, "%s/%s/%s", home, TRASH_FOLDER, t->trash);
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -g  -Wall -o trash trash.o
 
 
 # 설치방법
