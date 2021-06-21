@@ -19,9 +19,11 @@ Trash Folder의 단점인 휴지통 비우기를 하지 않아서, 서버의 디
 $ make
 
 gcc -g  -Wall   -c -o trash.o trash.c
+
 gcc -g  -Wall -o trash trash.o
 
 $ make install
+
 cp trash ~/.trash/trash
 
 Warning 2개 나오는 것은 무시한다. 
