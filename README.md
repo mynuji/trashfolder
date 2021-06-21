@@ -35,6 +35,12 @@ Warning 2개 나오는 것은 무시한다.
 
  - 삭제명령: 기존 rm 명령과 동일하다.
  - 파일복원: rm -u
+
+ - 종료방법: Ctrl-X
+ - 상하이동: 커서키 또는 J, K 키
+ - 파일복원: Enter
+ - 선택   : Space
+ - 삭제   : Ctrl-D
  
 # Original rm 사용 방법
  - OS에서 제공하는 기본적인 rm 명령어를 사용하기 위해서는 command line 의 맨 앞에 '\'를 시작하게 한다. 
