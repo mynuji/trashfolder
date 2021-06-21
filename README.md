@@ -14,6 +14,7 @@ Trash Folder의 단점인 휴지통 비우기를 하지 않아서, 서버의 디
 이렇게 만든 사유는 삭제를 했을 때, 중요한 파일을 복원할 수 있으면 RISK를 대비할 수 있어서, 폴더를 일괄로 복원하는 기능은 만들지를 않았습니다. 
 
 
+
 # 컴파일
 
 $ make
@@ -22,17 +23,21 @@ gcc -g  -Wall   -c -o trash.o trash.c
 
 gcc -g  -Wall -o trash trash.o
 
+
+
 $ make install
 
 cp trash ~/.trash/trash
 
 Warning 2개 나오는 것은 무시한다. 
 
+
 # 설치방법
 
  bash shell에서는 .profile 의 마지막에 아래 내용을 추가한다
  
  alias rm='~/.trash/trash'
+
 
 # 사용방법
 
