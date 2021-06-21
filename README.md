@@ -17,6 +17,7 @@ Trash Folder의 단점인 휴지통 비우기를 하지 않아서, 서버의 디
 # 컴파일
 
 $ make
+
 gcc -g  -Wall   -c -o trash.o trash.c
 gcc -g  -Wall -o trash trash.o
 
