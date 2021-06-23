@@ -66,7 +66,7 @@ source ~/.bash_profile
  - 삭제   : Ctrl-D
  
 # Original rm 사용 방법
- - OS에서 제공하는 기본적인 rm 명령어를 사용하기 위해서는 command line 의 맨 앞에 '\\'를 시작하게 한다. 
+ - OS에서 제공하는 기본적인 rm 명령어를 사용하기 위해서는 command line 의 맨 앞에 '\\'를 시작하면 됩니다. 이것은 alias 기능을 사용하지 않고, 원래의 명령어를 사용한다는 의미입니다. 
  
    $ \rm *.tmp
  
