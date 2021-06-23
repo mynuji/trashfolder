@@ -14,6 +14,7 @@ Trash Folder의 단점인 휴지통 비우기를 하지 않아서, 서버의 디
 이렇게 만든 사유는 삭제를 했을 때, 중요한 파일을 복원할 수 있으면 RISK를 대비할 수 있어서, 폴더를 일괄로 복원하는 기능은 만들지를 않았습니다. 
 
 
+휴지통 기능을 사용할 계정에서 각각 아래의 설치를 해야한다.
 
 # 컴파일
 
@@ -27,6 +28,8 @@ gcc -g  -Wall -o trash trash.o
 컴파일 할 때, Warning이 2개 나타날 수 있는데, 이것은 무시해도 된다.
 
 
+# 설치
+
 
 $ make install
 
@@ -39,8 +42,6 @@ echo "alias rm='~/.trash/trash'" >> ~/.bash_profile
 source ~/.bash_profile
 
 
-
-# 설치방법
 
  bash shell에서는 위의 make install 명령으로 자동으로 설정이 되지만, csh 등의 다른 쉘을 사용할 경우, alias 등록을 직접해줘야 한다.
  
