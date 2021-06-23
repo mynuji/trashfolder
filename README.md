@@ -24,19 +24,33 @@ gcc -g  -Wall   -c -o trash.o trash.c
 gcc -g  -Wall -o trash trash.o
 
 
+컴파일 할 때, Warning이 2개 나타날 수 있는데, 이것은 무시해도 된다.
+
 
 $ make install
 
+mkdir -p ~/.trash
+
 cp trash ~/.trash/trash
 
-Warning 2개 나오는 것은 무시한다. 
+echo "alias rm='~/.trash/trash'" >> ~/.bash_profile
+
+source ~/.bash_profile
+
 
 
 # 설치방법
 
- bash shell에서는 .profile 의 마지막에 아래 내용을 추가한다
+ bash shell에서는 위의 make install 명령으로 자동으로 설정이 되지만, csh 등의 다른 쉘을 사용할 경우, alias 등록을 직접해줘야 한다.
+ 
+ bash의 경우에는 .profile 또는 .bash_profile 의 맨 아래 내용에 alias를 추가한다
  
  alias rm='~/.trash/trash'
+ 
+ 
+ csh의 경우에는 .cshrc 파일의 맨 아래 내용에 아래 내용을 추가한다.
+ 
+ alias rm '~/.trash/trash'
 
 
 # 사용방법
