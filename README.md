@@ -27,6 +27,7 @@ gcc -g  -Wall -o trash trash.o
 컴파일 할 때, Warning이 2개 나타날 수 있는데, 이것은 무시해도 된다.
 
 
+
 $ make install
 
 mkdir -p ~/.trash
