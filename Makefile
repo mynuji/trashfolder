@@ -26,11 +26,11 @@ INSTALL_DIR = ~/.trash
 PROFILE1 = ~/.bash_profile
 PROFILE2 = ~/.profile
 
-ifeq ($(shell test -e $(PROFILE1) && echo -n yes),yes)
-	PROFILE=$(PROFILE1)
-endif
 ifeq ($(shell test -e $(PROFILE2) && echo -n yes),yes)
 	PROFILE=$(PROFILE2)
+endif
+ifeq ($(shell test -e $(PROFILE1) && echo -n yes),yes)
+	PROFILE=$(PROFILE1)
 endif
 
 
