@@ -48,7 +48,8 @@ clean:
 install: md_install_dir
 	cp trash ~/.trash/trash
 	echo "alias rm='~/.trash/trash'" >> $(PROFILE)
-	source $(PROFILE)
+	cd
+	. $(PROFILE)
 
 trash.o 	: 	Makefile trash.h
 
