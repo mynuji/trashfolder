@@ -27,6 +27,8 @@ gcc -g  -Wall -o trash trash.o
 
 컴파일 할 때, Warning이 2개 나타날 수 있는데, 이것은 무시해도 된다.
 
+맥 OS에서 사용할 때는, Makefile 의 __OSX__ 를 설정해줘야 한다. 컴파일할 때, OSX OS에 대해 check하는 부분을 넣지 못하였다. darwin... 뭣이었나 기억이 가물가물...
+
 
 # 설치
 
@@ -53,6 +55,10 @@ source ~/.bash_profile
  csh의 경우에는 .cshrc 파일의 맨 아래 내용에 아래 내용을 추가한다.
  
  alias rm '~/.trash/trash'
+
+
+OSX의 경우에는 설치되는 폴더가 .trash 가 아닌, .trash_folder를 사용한다.  그 사유는 OSX의 GUI에서 사용하는 휴지통 기능의 폴더가 .Trash로 설정되어 있어서 같이 사용하면 안된다.
+make install 할 때, 스크립트 오류가 발생될 수 있는데, 설치는 직접 해당 폴더를 만들어주고 profile에 alias를 설정해준 후에 재로그인을 하면 된다.
 
 
 # 사용방법
