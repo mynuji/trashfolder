@@ -16,12 +16,18 @@ CC=gcc
 #------------------------------------------------------------------------------
 OBJECT =  trash.o
 
+OS = "__OSX__"
 CFLAGS = -g 
 #CFLAGS += -DEXCEPT_ROOT 
+#CFLAGS += -D$(OS)
 CFLAGS += -Wall
 
 
-INSTALL_DIR = ~/.trash
+ifeq (OS, "__OSX__")
+	INSTALL_DIR = ~/.trash_folder
+else
+	INSTALL_DIR = ~/.trash
+endif
 
 PROFILE1 = ~/.bash_profile
 PROFILE2 = ~/.profile
@@ -46,8 +52,8 @@ clean:
 	rm -f *.o
 
 install: md_install_dir
-	cp trash ~/.trash/trash
-	echo "alias rm='~/.trash/trash'" >> $(PROFILE)
+	cp trash ~/$(INSTALL_DIR)/trash
+	echo "alias rm='~/$(INSTALL_DIR)/trash'" >> $(PROFILE)
 	cd
 	. $(PROFILE)
 
