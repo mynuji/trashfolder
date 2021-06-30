@@ -53,7 +53,7 @@
 
 #define LICENSE_FILLER  \
         " Copyright(c), 1998 ~ 2017 by KANG, YOUNG-IG, \n" \
-        " myjunu@gmail.com, http://mynuji.iptime.org  \n"  \
+        " myjunu@gmail.com, http://jarvis.iptime.org  \n"  \
         " 기존의 rm 명령은 \\rm으로 사용하시면 됩니다. \n" \
         " 삭제 중 에러가 발생하면 \\rm명령으로\n" \
         " 사용하시고, E-mail로 에러를 알려주세요\n\n" \
