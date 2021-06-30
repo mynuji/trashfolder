@@ -81,3 +81,19 @@ make install 할 때, 스크립트 오류가 발생될 수 있는데, 설치는 
 # Screen Shot
 ![image](https://user-images.githubusercontent.com/20812684/122073134-2ab39c00-ce33-11eb-97a4-a7905479a437.png)
 
+
+# Trouble Shooting
+
+ - make install 했을 때, 오류가 발생되는 경우가 있음.
+   오류 발생하는 원인은 Makefile 을 제가 잘못 만들어서 발생하는 것입니다.
+   
+   홈디렉토리에 .trash 디렉토리를 만들고, 그 폴더 내에 실행화일을 넣어두면 됨.
+   
+   물론, 시스템 전체에 적용하기 위해서는 굳이 홈디렉토리에 설치하지 않고, /usr/local, /usr/bin 등의 폴더에 trash폴더를 만들어서 사용해도 됨.
+   
+   쉘의 rc파일, profile에 alias정보를 등록하여, 기존의 rm 명령어 대신에 trash 프로그램이 실행되도록 설정하면 됩니다. ^^
+   
+ - 맥북에서 설치할 때의 오류(정확히는 make install 했을 때 오류가 남)
+   OSX의 GUI에서 사용되는 휴지통이 .Trash 라는 폴더를 사용하고 있어서, 중복 오류가 발생될 수 있고, 여기에 같이 사용할 경우, 다른 문제점이 발생될 수 있어서, 이 프로그램의 .trash폴더를 다른이름으로 변경해야 함. Makefile 에 OSX에 대한 부분 주석 처리된 부분을 제거할 필요있음.
+ - makefile에서 OS define정보를 참조해서 자동으로 처리되게 변경해야 되는데, 자꾸 미루게 되네요.... ^^
+ 
